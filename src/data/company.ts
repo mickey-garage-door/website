@@ -1,0 +1,36 @@
+export const company = {
+  name: "Mickey's Garage Door",
+  legalName: "Mickey's Garage Door LLC",
+  phone: "(619) 555-0100",
+  phonePlain: "6195550100",
+  email: "info@mickeysgaragedoor.com",
+  address: {
+    street: "4320 Market Street",
+    city: "San Diego",
+    state: "CA",
+    zip: "92102",
+    full: "4320 Market Street, San Diego, CA 92102",
+  },
+  geo: {
+    lat: 32.7157,
+    lng: -117.1611,
+  },
+  hours: "Mon–Sat: 7am–7pm · Sun: 8am–5pm",
+  hoursShort: "Mon–Sat 7am–7pm",
+  emergency: "24/7 Emergency Service Available",
+  founded: "2011",
+  yearsInBusiness: "13+",
+  reviewCount: "240+",
+  ratingValue: "4.9",
+  license: "CA License #C-61/D-28 XXXXXXX",
+  tagline: "San Diego's Trusted Garage Door Experts",
+  description:
+    "Mickey's Garage Door provides fast, reliable garage door repair and installation services across San Diego County. Licensed, bonded, and insured with same-day availability.",
+  googleMapsUrl: "https://maps.google.com",
+  yelpUrl: "https://yelp.com",
+  googleReviewsUrl: "https://maps.google.com",
+  social: {
+    facebook: "https://facebook.com",
+    instagram: "https://instagram.com",
+  },
+} as const;
