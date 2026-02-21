@@ -64,7 +64,7 @@ export default function HeroCarousel({ images, interval = 5000 }: HeroCarouselPr
             className="object-cover"
           />
           {/* Gradient overlay so hero text stays readable */}
-          <div className="absolute inset-0 bg-brand-gradient-hero opacity-80" />
+          <div className="absolute inset-0 bg-brand-gradient-hero opacity-45" />
         </div>
       ))}
 
