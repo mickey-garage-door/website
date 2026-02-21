@@ -27,19 +27,27 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 shrink-0 h-10">
-            <Image
-              src="/icon_fix.png"
-              alt="Mickey's Garage Door logo"
-              width={0}
-              height={0}
-              sizes="100vw"
-              className="h-[1.3em] w-auto"
-            />
+          <Link href="/" className="flex items-center gap-2 flex-wrap min-w-0">
+            <div className="flex flex-wrap gap-2 logo-word-dark">
+              <div className="flex items-center gap-2">
+                <Image
+                  src="/icon_fix.png"
+                  alt="Mickey's Garage Door logo"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  className="h-[1.3em] w-auto"
+                />
 
-            <span className="logo-word-dark font-black text-xl md:text-2xl tracking-tight leading-none">
-              Mickey&apos;s Garage Door
-            </span>
+                <span className="font-black text-xl md:text-2xl tracking-tight leading-none">
+                  Mickey&apos;s
+                </span>
+              </div>
+
+              <span className="font-black text-xl md:text-2xl tracking-tight leading-none">
+                Garage Door
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Nav */}
