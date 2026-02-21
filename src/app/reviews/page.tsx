@@ -7,8 +7,7 @@ import CTABanner from "@/components/sections/CTABanner";
 
 export const metadata: Metadata = {
   title: "Reviews | Mickey's Garage Door San Diego",
-  description:
-    `Read ${company.reviewCount} verified reviews from San Diego homeowners. Mickey's Garage Door — ${company.ratingValue} stars on Google. Licensed, bonded & insured.`,
+  description: `Read ${company.reviewCount} verified reviews from San Diego homeowners. Mickey's Garage Door — ${company.ratingValue} stars on Google. Licensed, bonded & insured.`,
   alternates: { canonical: "/reviews" },
 };
 
@@ -33,42 +32,34 @@ const reviewsSchema = {
 };
 
 export default function ReviewsPage() {
-  const avgRating = (
-    reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length
-  ).toFixed(1);
+  const avgRating = (reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length).toFixed(1);
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsSchema) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewsSchema) }} />
 
-      <section className="bg-blue-950 text-white py-16 px-4">
+      <section className="bg-brand-gradient-hero text-white py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
             <StarRating rating={parseFloat(avgRating)} className="text-3xl" />
             <span className="text-4xl font-black">{company.ratingValue}</span>
           </div>
           <h1 className="text-4xl font-black mb-3">Customer Reviews</h1>
-          <p className="text-blue-200 text-lg">
-            {company.reviewCount} verified reviews from San Diego homeowners.
-          </p>
+          <p className="text-blue-100 text-lg">{company.reviewCount} verified reviews from San Diego homeowners.</p>
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4 bg-surface transition-colors duration-300">
         <div className="max-w-7xl mx-auto">
-          {/* Summary row */}
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12 p-6 bg-gray-50 rounded-2xl border border-gray-100">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-12 p-6 bg-surface-alt rounded-2xl border border-theme transition-colors duration-300">
             {[5, 4, 3, 2, 1].map((star) => {
               const count = reviews.filter((r) => r.rating === star).length;
               const pct = Math.round((count / reviews.length) * 100);
               return (
                 <div key={star} className="text-center">
                   <div className="text-yellow-400 text-lg mb-1">{"★".repeat(star)}</div>
-                  <div className="text-2xl font-black text-gray-900">{count}</div>
-                  <div className="text-xs text-gray-400">{pct}%</div>
+                  <div className="text-2xl font-black text-gray-900 dark:text-gray-100">{count}</div>
+                  <div className="text-xs text-gray-400 dark:text-gray-500">{pct}%</div>
                 </div>
               );
             })}
@@ -80,14 +71,11 @@ export default function ReviewsPage() {
             ))}
           </div>
 
-          {/* Google CTA */}
           <div className="mt-10 text-center">
-            <p className="text-gray-500 text-sm mb-3">Want to see more reviews or leave your own?</p>
+            <p className="text-gray-500 dark:text-gray-400 text-sm mb-3">Want to see more reviews or leave your own?</p>
             <a
-              href={company.googleReviewsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-white border-2 border-gray-200 text-gray-700 font-bold px-6 py-3 rounded-lg hover:border-blue-900 hover:text-blue-900 transition-colors"
+              href={company.googleReviewsUrl} target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-surface border-2 border-theme text-gray-700 dark:text-gray-300 font-bold px-6 py-3 rounded-lg hover:border-brand-dark dark:hover:border-brand-cyan hover:text-brand-dark dark:hover:text-brand-cyan transition-colors"
             >
               View on Google
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

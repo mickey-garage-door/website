@@ -5,14 +5,14 @@ import { locations } from "@/data/locations";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-gray-900 dark:bg-gray-950 text-gray-300 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 py-14">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
             <div className="mb-4">
-              <span className="text-white font-black text-xl">Mickey&apos;s </span>
-              <span className="text-orange-400 font-black text-xl">Garage Door</span>
+              <span className="logo-word-dark text-white font-black text-xl">Mickey&apos;s </span>
+              <span className="text-brand-cyan font-black text-xl">Garage Door</span>
             </div>
             <p className="text-sm text-gray-400 mb-4 leading-relaxed">
               San Diego&apos;s trusted garage door experts since {company.founded}. Licensed, bonded &amp; insured.
@@ -20,7 +20,7 @@ export default function Footer() {
             <div className="space-y-2 text-sm">
               <a
                 href={`tel:${company.phonePlain}`}
-                className="flex items-center gap-2 text-orange-400 font-semibold hover:text-orange-300 transition-colors"
+                className="flex items-center gap-2 text-brand-cyan font-semibold hover:text-brand-cyan-lt transition-colors"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
@@ -43,7 +43,7 @@ export default function Footer() {
                 href={company.social.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-blue-600 transition-colors"
+                className="w-8 h-8 bg-gray-700 rounded flex items-center justify-center hover:bg-brand-dark transition-colors"
                 aria-label="Facebook"
               >
                 <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -66,16 +66,11 @@ export default function Footer() {
 
           {/* Services */}
           <div>
-            <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
-              Services
-            </h3>
+            <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">Services</h3>
             <ul className="space-y-2">
               {services.map((service) => (
                 <li key={service.slug}>
-                  <Link
-                    href={`/services/${service.slug}`}
-                    className="text-sm hover:text-white transition-colors"
-                  >
+                  <Link href={`/services/${service.slug}`} className="text-sm hover:text-white transition-colors">
                     {service.shortTitle}
                   </Link>
                 </li>
@@ -85,16 +80,11 @@ export default function Footer() {
 
           {/* Locations */}
           <div>
-            <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
-              Locations
-            </h3>
+            <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">Locations</h3>
             <ul className="space-y-2">
               {locations.map((loc) => (
                 <li key={loc.slug}>
-                  <Link
-                    href={`/locations/${loc.slug}`}
-                    className="text-sm hover:text-white transition-colors"
-                  >
+                  <Link href={`/locations/${loc.slug}`} className="text-sm hover:text-white transition-colors">
                     {loc.city}
                   </Link>
                 </li>
@@ -104,9 +94,7 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">
-              Company
-            </h3>
+            <h3 className="text-white font-semibold text-sm uppercase tracking-wider mb-4">Company</h3>
             <ul className="space-y-2">
               {[
                 { href: "/about", label: "About Us" },
@@ -117,17 +105,14 @@ export default function Footer() {
                 { href: "/terms-of-service", label: "Terms of Service" },
               ].map(({ href, label }) => (
                 <li key={label}>
-                  <Link href={href} className="text-sm hover:text-white transition-colors">
-                    {label}
-                  </Link>
+                  <Link href={href} className="text-sm hover:text-white transition-colors">{label}</Link>
                 </li>
               ))}
             </ul>
-
             <div className="mt-6 space-y-1 text-xs text-gray-400">
               <p className="font-medium text-gray-300">Hours</p>
               <p>{company.hours}</p>
-              <p className="text-orange-400">{company.emergency}</p>
+              <p className="text-brand-cyan">{company.emergency}</p>
             </div>
           </div>
         </div>
@@ -150,21 +135,13 @@ export default function Footer() {
 
         {/* Bottom bar */}
         <div className="text-center text-xs text-gray-500 space-y-1">
+          <p>© {new Date().getFullYear()} {company.legalName}. All Rights Reserved.</p>
           <p>
-            © {new Date().getFullYear()} {company.legalName}. All Rights Reserved.
-          </p>
-          <p>
-            <Link href="/privacy-policy" className="hover:text-gray-300 transition-colors">
-              Privacy Policy
-            </Link>
+            <Link href="/privacy-policy" className="hover:text-gray-300 transition-colors">Privacy Policy</Link>
             {" · "}
-            <Link href="/terms-of-service" className="hover:text-gray-300 transition-colors">
-              Terms of Service
-            </Link>
+            <Link href="/terms-of-service" className="hover:text-gray-300 transition-colors">Terms of Service</Link>
             {" · "}
-            <Link href="/sitemap.xml" className="hover:text-gray-300 transition-colors">
-              Sitemap
-            </Link>
+            <Link href="/sitemap.xml" className="hover:text-gray-300 transition-colors">Sitemap</Link>
           </p>
         </div>
       </div>

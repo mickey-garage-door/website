@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import GoogleAnalytics from "@/components/seo/GoogleAnalytics";
 import LocalBusinessSchema from "@/components/seo/LocalBusinessSchema";
+import { ThemeProvider } from "@/context/ThemeContext";
 import { company } from "@/data/company";
 
 const geistSans = Geist({
@@ -55,15 +56,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={geistSans.variable}>
+    <html lang="en" className={geistSans.variable} suppressHydrationWarning>
       <head>
+        {/*
+          Inline script: applies dark class BEFORE first paint to prevent
+          the flash of wrong theme (FOWT). Runs synchronously so there is
+          no layout shift.
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('mgd-theme');if(t==='dark'||(t===null&&window.matchMedia('(prefers-color-scheme:dark)').matches)){document.documentElement.classList.add('dark')}}catch(e){}})()`,
+          }}
+        />
         <LocalBusinessSchema />
       </head>
       <body className="antialiased flex flex-col min-h-screen">
         <GoogleAnalytics />
-        <Header />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <ThemeProvider>
+          <Header />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

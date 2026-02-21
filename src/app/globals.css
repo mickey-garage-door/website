@@ -1,29 +1,135 @@
 @import "tailwindcss";
 
+/* ─── Brand color tokens (matched to logo gradient) ─────────────────────────
+   Logo gradient: deep navy #1B2F8A (top-left) → bright cyan #00AAEE (bottom-right)
+   ─────────────────────────────────────────────────────────────────────────── */
 :root {
+  /* Semantic surface tokens — light mode */
   --background: #ffffff;
+  --background-alt: #f8fafc;
   --foreground: #1e293b;
+  --foreground-muted: #64748b;
+  --surface: #ffffff;
+  --surface-raised: #f1f5f9;
+  --border: #e2e8f0;
+  --border-subtle: #f1f5f9;
+
+  /* Core brand palette */
+  --brand-dark:    #1b2f8a; /* deep navy  — logo top / dark anchor */
+  --brand-mid:     #1a5fb4; /* royal blue — gradient midpoint      */
+  --brand-light:   #0e8ed6; /* sky blue   — gradient 3/4 point     */
+  --brand-cyan:    #00aaee; /* bright cyan — logo bottom / accent  */
+  --brand-cyan-lt: #33c0f5; /* lighter cyan for hover / tints      */
+
+  /* Gradient shorthands */
+  --brand-gradient: linear-gradient(
+    135deg,
+    #1b2f8a 0%,
+    #1a5fb4 45%,
+    #00aaee 100%
+  );
+  --brand-gradient-hero: linear-gradient(
+    135deg,
+    #0f1f66 0%,
+    #1b2f8a 35%,
+    #1a5fb4 65%,
+    #00aaee 100%
+  );
+}
+
+/* ─── Dark mode overrides ────────────────────────────────────────────────── */
+html.dark {
+  --background:     #0f172a;
+  --background-alt: #1e293b;
+  --foreground:     #e2e8f0;
+  --foreground-muted: #94a3b8;
+  --surface:        #1e293b;
+  --surface-raised: #273549;
+  --border:         #334155;
+  --border-subtle:  #1e293b;
+
+  color-scheme: dark;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background:    var(--background);
+  --color-foreground:    var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Expose brand tokens as Tailwind arbitrary-value-friendly custom props */
+  --color-brand-dark:    var(--brand-dark);
+  --color-brand-mid:     var(--brand-mid);
+  --color-brand-light:   var(--brand-light);
+  --color-brand-cyan:    var(--brand-cyan);
+  --color-brand-cyan-lt: var(--brand-cyan-lt);
 }
 
-html {
-  scroll-behavior: smooth;
-}
+@layer utilities {
+  html {
+    scroll-behavior: smooth;
+  }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family:
+      var(--font-geist-sans),
+      system-ui,
+      -apple-system,
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
 
-:focus-visible {
-  outline: 2px solid #1e3a5f;
-  outline-offset: 2px;
+  :focus-visible {
+    outline: 2px solid var(--brand-cyan);
+    outline-offset: 2px;
+  }
+
+  /* ─── Semantic surface helpers ───────────────────────────────────────────── */
+  .bg-surface        { background-color: var(--surface); }
+  .bg-surface-alt    { background-color: var(--background-alt); }
+  .bg-surface-raised { background-color: var(--surface-raised); }
+  .text-muted        { color: var(--foreground-muted); }
+  .border-theme      { border-color: var(--border); }
+  .border-theme-subtle { border-color: var(--border-subtle); }
+
+  /* ─── Gradient helpers ───────────────────────────────────────────────────── */
+  .bg-brand-gradient {
+    background: var(--brand-gradient);
+  }
+  .bg-brand-gradient-hero {
+    background: var(--brand-gradient-hero);
+  }
+
+  /* ─── Solid brand colour helpers ─────────────────────────────────────────── */
+  .bg-brand-dark  { background-color: var(--brand-dark); }
+  .bg-brand-mid   { background-color: var(--brand-mid); }
+  .bg-brand-cyan  { background-color: var(--brand-cyan); }
+
+  .text-brand-dark  { color: var(--brand-dark); }
+  .text-brand-mid   { color: var(--brand-mid); }
+  .text-brand-cyan  { color: var(--brand-cyan); }
+
+  .border-brand-dark { border-color: var(--brand-dark); }
+  .border-brand-cyan { border-color: var(--brand-cyan); }
+
+  .ring-brand-cyan { --tw-ring-color: var(--brand-cyan); }
+
+  /* ─── Logo wordmark classes ──────────────────────────────────────────────── */
+  .logo-word-dark {
+    color: var(--brand-gradient);
+    background: var(--brand-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .logo-word-cyan {
+    color: var(--brand-cyan);
+  }
+
+  /* ─── Dark mode: white cards → dark surface ──────────────────────────────── */
+  html.dark .dark\:bg-surface   { background-color: var(--surface) !important; }
+  html.dark .dark\:border-theme { border-color: var(--border) !important; }
 }
