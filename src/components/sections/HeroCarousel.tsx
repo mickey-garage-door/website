@@ -9,6 +9,7 @@ interface HeroCarouselProps {
   interval?: number;
 }
 
+
 export default function HeroCarousel({ images, interval = 5000 }: HeroCarouselProps) {
   const [current, setCurrent] = useState(0);
   const [paused, setPaused] = useState(false);
