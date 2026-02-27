@@ -8,7 +8,7 @@ interface CTABannerProps {
 
 export default function CTABanner({
   heading = "Ready to Fix Your Garage Door Today?",
-  subtext = "Same-day service available. Licensed, bonded & insured. Free on-site estimates.",
+  subtext = "Same-day service available. bonded & insured. Free on-site estimates.",
 }: CTABannerProps) {
   return (
     <section className="bg-brand-gradient text-white py-14 px-4">

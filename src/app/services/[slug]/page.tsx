@@ -185,7 +185,6 @@ export default async function ServicePage({ params }: Props) {
 
             <div className="border border-gray-200 rounded-xl p-6 space-y-3 text-sm text-gray-600">
               {[
-                "✓ Licensed, Bonded & Insured",
                 "✓ Background-Checked Technicians",
                 "✓ Upfront Pricing — No Surprises",
                 "✓ Fully Stocked Trucks",

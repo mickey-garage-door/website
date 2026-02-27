@@ -7,7 +7,7 @@ import StarRating from "@/components/ui/StarRating";
 export const metadata: Metadata = {
   title: "About Mickey's Garage Door | San Diego, CA",
   description:
-    "Learn about Mickey's Garage Door — a locally owned, licensed garage door company serving San Diego County since 2011. Licensed, bonded & insured.",
+    "Learn about Mickey's Garage Door — a locally owned, bonded & insured.",
   alternates: { canonical: "/about" },
 };
 
@@ -47,7 +47,6 @@ export default function AboutPage() {
             </h2>
             <div className="space-y-4 text-gray-600 dark:text-gray-300 leading-relaxed">
               <p>Mickey&apos;s Garage Door was founded in San Diego with a straightforward mission: give homeowners a reliable, honest option for garage door repairs and installations without the frustration of franchise call centers or unreliable technicians.</p>
-              <p>Over {company.yearsInBusiness}, we&apos;ve grown from a one-truck operation to a full team of licensed technicians covering all of San Diego County — but our approach hasn&apos;t changed. Every job is treated like it&apos;s our own home.</p>
               <p>We&apos;re not a franchise. We&apos;re not a call center. We&apos;re a local company where real people answer the phone, real technicians show up, and real accountability exists when something isn&apos;t right.</p>
             </div>
 

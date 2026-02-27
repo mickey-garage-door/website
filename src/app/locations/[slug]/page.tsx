@@ -220,7 +220,7 @@ export default async function LocationPage({ params }: Props) {
 
       <CTABanner
         heading={`Need Garage Door Service in ${location.city}?`}
-        subtext={`Same-day service available throughout ${location.city} and surrounding areas. Licensed, bonded & insured.`}
+        subtext={`Same-day service available throughout ${location.city} and surrounding areas. bonded & insured.`}
       />
     </>
   );

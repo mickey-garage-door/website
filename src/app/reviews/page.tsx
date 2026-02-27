@@ -7,7 +7,7 @@ import CTABanner from "@/components/sections/CTABanner";
 
 export const metadata: Metadata = {
   title: "Reviews | Mickey's Garage Door San Diego",
-  description: `Read ${company.reviewCount} verified reviews from San Diego homeowners. Mickey's Garage Door — ${company.ratingValue} stars on Google. Licensed, bonded & insured.`,
+  description: `Read ${company.reviewCount} verified reviews from San Diego homeowners. Mickey's Garage Door — ${company.ratingValue} stars on Google.bonded & insured.`,
   alternates: { canonical: "/reviews" },
 };
 

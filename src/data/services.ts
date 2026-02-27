@@ -25,7 +25,7 @@ export const services: Service[] = [
     shortTitle: "Door Repair",
     metaTitle: "Garage Door Repair in San Diego, CA | Same-Day Service",
     metaDescription:
-      "Fast, reliable garage door repair in San Diego. Licensed technicians, same-day appointments, and upfront pricing. Call Mickey's Garage Door now.",
+      "Fast, reliable garage door repair in San Diego, same-day appointments, and upfront pricing. Call Mickey's Garage Door now.",
     headline: "Expert Garage Door Repair in San Diego",
     subheadline:
       "Fast diagnosis, honest pricing, and same-day repairs — backed by our satisfaction guarantee.",
@@ -97,7 +97,7 @@ export const services: Service[] = [
     shortTitle: "Spring Replacement",
     metaTitle: "Garage Door Spring Replacement in San Diego | Mickey's Garage Door",
     metaDescription:
-      "Broken garage door spring? Mickey's Garage Door offers same-day spring replacement in San Diego. Licensed, insured, upfront pricing. Call now.",
+      "Broken garage door spring? Mickey's Garage Door offers same-day spring replacement in San Diego. upfront pricing. Call now.",
     headline: "Garage Door Spring Replacement in San Diego",
     subheadline:
       "Broken springs are the #1 cause of garage door failure. We replace them safely the same day.",

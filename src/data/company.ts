@@ -25,7 +25,7 @@ export const company = {
   license: "CA License #C-61/D-28 XXXXXXX",
   tagline: "San Diego's Trusted Garage Door Experts",
   description:
-    "Mickey's Garage Door provides fast, reliable garage door repair and installation services across San Diego County. Licensed, bonded, and insured with same-day availability.",
+    "Mickey's Garage Door provides fast, reliable garage door repair and installation services across San Diego County. bonded, and insured with same-day availability.",
   googleMapsUrl: "https://maps.google.com",
   yelpUrl: "https://yelp.com",
   googleReviewsUrl: "https://maps.google.com",

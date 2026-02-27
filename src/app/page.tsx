@@ -29,10 +29,6 @@ const homepageFAQs = [
     answer: "Yes. In most cases we can dispatch a technician the same day — often within 2–4 hours. Call before noon for the best chance of same-day service.",
   },
   {
-    question: "Are you licensed and insured?",
-    answer: "Yes. Mickey's Garage Door is fully licensed, bonded, and insured in California. Our technicians are background-checked and trained on all major door brands.",
-  },
-  {
     question: "What areas do you serve?",
     answer: "We serve all of San Diego County including Chula Vista, El Cajon, La Mesa, Santee, Escondido, Encinitas, National City, and Lemon Grove.",
   },
@@ -48,7 +44,6 @@ const homepageFAQs = [
 
 const trustPoints = [
   { icon: "⚡", title: "Same-Day Service", description: "Call before noon and we'll arrive today. Emergency service available 24/7." },
-  { icon: "🛡️", title: "", description: "Fully licensed, bonded, and insured in California. Background-checked technicians." },
   { icon: "✅", title: "1-Year Warranty", description: "All parts and labor backed by a 1-year warranty. Lifetime springs available." },
   { icon: "📍", title: "Locally Owned", description: `San Diego's own since ${company.founded}. Not a franchise — a real local business.` },
 ];
@@ -79,7 +74,7 @@ export default function HomePage() {
               </h1>
               <p className="text-blue-100 text-lg mb-7 leading-relaxed">
                 Fast, reliable repairs and installations across San Diego County.
-                Licensed, bonded &amp; insured. {company.yearsInBusiness} years serving local homeowners.
+                bonded &amp; insured. {company.yearsInBusiness} years serving local homeowners.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">

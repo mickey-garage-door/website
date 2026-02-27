@@ -15,7 +15,7 @@ export default function Footer() {
               <span className="text-brand-cyan font-black text-xl">Garage Door</span>
             </div>
             <p className="text-sm text-gray-400 mb-4 leading-relaxed">
-              San Diego&apos;s trusted garage door experts since {company.founded}. Licensed, bonded &amp; insured.
+              San Diego&apos;s trusted garage door experts since {company.founded}. bonded &amp; insured.
             </p>
             <div className="space-y-2 text-sm">
               <a
@@ -127,7 +127,7 @@ export default function Footer() {
             <span className="hidden md:block text-gray-600">|</span>
             <span>BBB Accredited Business</span>
             <span className="hidden md:block text-gray-600">|</span>
-            <span>Licensed · Bonded · Insured</span>
+            <span>Bonded · Insured</span>
             <span className="hidden md:block text-gray-600">|</span>
             <span>{company.license}</span>
           </div>

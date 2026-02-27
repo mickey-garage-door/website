@@ -24,7 +24,7 @@ export const locations: Location[] = [
     zip: ["91910", "91911", "91913", "91914", "91915"],
     metaTitle: "Garage Door Repair in Chula Vista, CA | Mickey's Garage Door",
     metaDescription:
-      "Fast garage door repair and installation in Chula Vista, CA. Same-day service, licensed technicians. Mickey's Garage Door — call for a free estimate.",
+      "Fast garage door repair and installation in Chula Vista, CA. Same-day service, Mickey's Garage Door — call for a free estimate.",
     headline: "Garage Door Repair & Installation in Chula Vista",
     subheadline:
       "Serving Chula Vista homeowners with same-day service, honest pricing, and a 1-year warranty.",
@@ -55,7 +55,7 @@ export const locations: Location[] = [
     zip: ["92019", "92020", "92021"],
     metaTitle: "Garage Door Repair in El Cajon, CA | Mickey's Garage Door",
     metaDescription:
-      "Garage door repair and installation in El Cajon, CA. Same-day service, licensed and insured. Mickey's Garage Door — call for a free estimate.",
+      "Garage door repair and installation in El Cajon, CA. Same-day service, Mickey's Garage Door — call for a free estimate.",
     headline: "Garage Door Repair & Installation in El Cajon",
     subheadline:
       "Serving El Cajon homeowners with fast, reliable garage door service.",
@@ -86,7 +86,7 @@ export const locations: Location[] = [
     zip: ["91941", "91942", "91943", "91944"],
     metaTitle: "Garage Door Repair in La Mesa, CA | Mickey's Garage Door",
     metaDescription:
-      "Professional garage door repair and installation in La Mesa, CA. Same-day service. Mickey's Garage Door — licensed, insured, free estimate.",
+      "Professional garage door repair and installation in La Mesa, CA. Same-day service. Mickey's Garage Door free estimate.",
     headline: "Garage Door Repair & Installation in La Mesa",
     subheadline:
       "Your local La Mesa garage door specialists — same-day service, upfront pricing.",
@@ -117,7 +117,7 @@ export const locations: Location[] = [
     zip: ["92071"],
     metaTitle: "Garage Door Repair in Santee, CA | Mickey's Garage Door",
     metaDescription:
-      "Garage door repair and installation in Santee, CA. Fast, reliable service from licensed technicians. Mickey's Garage Door — call for a free estimate.",
+      "Garage door repair and installation in Santee, CA. Fast. Mickey's Garage Door — call for a free estimate.",
     headline: "Garage Door Repair & Installation in Santee",
     subheadline:
       "Santee's reliable choice for same-day garage door repairs and new installations.",
@@ -148,7 +148,7 @@ export const locations: Location[] = [
     zip: ["92025", "92026", "92027", "92029"],
     metaTitle: "Garage Door Repair in Escondido, CA | Mickey's Garage Door",
     metaDescription:
-      "Garage door repair and installation in Escondido, CA. Same-day service from licensed technicians. Call Mickey's Garage Door for a free estimate.",
+      "Garage door repair and installation in Escondido, CA. Call Mickey's Garage Door for a free estimate.",
     headline: "Garage Door Repair & Installation in Escondido",
     subheadline:
       "Serving Escondido and North County with fast, professional garage door service.",
@@ -210,7 +210,7 @@ export const locations: Location[] = [
     zip: ["91950"],
     metaTitle: "Garage Door Repair in National City, CA | Mickey's Garage Door",
     metaDescription:
-      "Garage door repair and installation in National City, CA. Same-day service, licensed technicians. Mickey's Garage Door — free estimate.",
+      "Garage door repair and installation in National City, CA.Mickey's Garage Door — free estimate.",
     headline: "Garage Door Repair & Installation in National City",
     subheadline:
       "Fast, professional garage door service for National City residents.",
@@ -236,7 +236,7 @@ export const locations: Location[] = [
     zip: ["91945"],
     metaTitle: "Garage Door Repair in Lemon Grove, CA | Mickey's Garage Door",
     metaDescription:
-      "Garage door repair and installation in Lemon Grove, CA. Same-day service. Mickey's Garage Door — licensed, insured, free estimate.",
+      "Garage door repair and installation in Lemon Grove, CA. Same-day service. Mickey's Garage Door free estimate.",
     headline: "Garage Door Repair & Installation in Lemon Grove",
     subheadline:
       "Dependable garage door service for Lemon Grove homeowners — same day, every time.",
