@@ -5,10 +5,10 @@ export const company = {
   phonePlain: "6195723223",
   email: "info@mickeysgaragedoor.com",
   address: {
-    street: "4320 Market Street",
+    street: "300 14th St",
     city: "San Diego",
     state: "CA",
-    zip: "92102",
+    zip: "92101",
     full: "4320 Market Street, San Diego, CA 92102",
   },
   geo: {
