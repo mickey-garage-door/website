@@ -5,7 +5,7 @@ import CTABanner from "@/components/sections/CTABanner";
 
 export const metadata: Metadata = {
   title: "Garage Door Services in San Diego, CA",
-  description:
+  description:"",
   alternates: { canonical: "/services" },
 };
 
