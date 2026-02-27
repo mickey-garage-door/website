@@ -6,7 +6,7 @@ import ContactForm from "@/components/forms/ContactForm";
 export const metadata: Metadata = {
   title: "Contact Us | Free Garage Door Estimate in San Diego",
   description:
-    "Contact Mickey's Garage Door for a free estimate. Call (619) 555-0100 or fill out our form. Same-day service available across San Diego County.",
+    "Contact Mickey's Garage Door for a free estimate. Call (619) 572-3223 or fill out our form. Same-day service available across San Diego County.",
   alternates: { canonical: "/contact" },
 };
 

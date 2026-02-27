@@ -1,8 +1,8 @@
 export const company = {
   name: "Mickey's Garage Door",
   legalName: "Mickey's Garage Door LLC",
-  phone: "(619) 555-0100",
-  phonePlain: "6195550100",
+  phone: "(619) 572-3223",
+  phonePlain: "6195723223",
   email: "info@mickeysgaragedoor.com",
   address: {
     street: "4320 Market Street",

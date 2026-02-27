@@ -6,7 +6,6 @@ import CTABanner from "@/components/sections/CTABanner";
 export const metadata: Metadata = {
   title: "Garage Door Services in San Diego, CA",
   description:
-    "Full-service garage door repairs, installations, spring replacement, opener service, and emergency repairs across San Diego County. Licensed & insured.",
   alternates: { canonical: "/services" },
 };
 

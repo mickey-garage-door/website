@@ -240,7 +240,7 @@ export const services: Service[] = [
     shortTitle: "Cable & Drum",
     metaTitle: "Garage Door Cable Repair San Diego | Mickey's Garage Door",
     metaDescription:
-      "Broken or frayed garage door cable in San Diego? Mickey's Garage Door repairs cables and drums same-day. Licensed & insured. Free estimate.",
+      "Broken or frayed garage door cable in San Diego? Mickey's Garage Door repairs cables and drums same-day. Free estimate.",
     headline: "Garage Door Cable & Drum Repair in San Diego",
     subheadline:
       "Frayed or broken cables are a safety hazard. We repair and replace them the same day.",

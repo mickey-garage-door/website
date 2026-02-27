@@ -16,7 +16,6 @@ export default function Header() {
       <div className="bg-brand-gradient text-white text-xs py-1.5 hidden md:block">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <span className="flex gap-5">
-            <span>✓ Licensed &amp; Insured</span>
             <span>✓ Same-Day Service Available</span>
             <span>✓ 1-Year Warranty on All Work</span>
           </span>

@@ -66,7 +66,7 @@ export default function ContactForm({ defaultService = "", compact = false }: Co
             Phone Number <span className="text-red-500">*</span>
           </label>
           <input
-            id="phone" name="phone" type="tel" autoComplete="tel" required placeholder="(619) 555-0100"
+            id="phone" name="phone" type="tel" autoComplete="tel" required placeholder="(619) 572-3223"
             className={`${inputBase} ${state.fieldErrors?.phone ? "border-red-400 bg-red-50 dark:bg-red-950" : "border-gray-300 dark:border-gray-600"}`}
           />
           {state.fieldErrors?.phone && <p className="text-red-500 text-xs mt-1">{state.fieldErrors.phone}</p>}

@@ -15,7 +15,7 @@ import ContactForm from "@/components/forms/ContactForm";
 export const metadata: Metadata = {
   title: "San Diego Garage Door Repair & Installation | Mickey's Garage Door",
   description:
-    "Mickey's Garage Door — San Diego's trusted local garage door company. Same-day repair, spring replacement, new installations & 24/7 emergency service. Licensed & insured. Call now.",
+    "Mickey's Garage Door — San Diego's trusted local garage door company. Same-day repair, spring replacement, new installations & 24/7 emergency service. Call now.",
   alternates: { canonical: "/" },
 };
 
@@ -48,7 +48,7 @@ const homepageFAQs = [
 
 const trustPoints = [
   { icon: "⚡", title: "Same-Day Service", description: "Call before noon and we'll arrive today. Emergency service available 24/7." },
-  { icon: "🛡️", title: "Licensed & Insured", description: "Fully licensed, bonded, and insured in California. Background-checked technicians." },
+  { icon: "🛡️", title: "", description: "Fully licensed, bonded, and insured in California. Background-checked technicians." },
   { icon: "✅", title: "1-Year Warranty", description: "All parts and labor backed by a 1-year warranty. Lifetime springs available." },
   { icon: "📍", title: "Locally Owned", description: `San Diego's own since ${company.founded}. Not a franchise — a real local business.` },
 ];
