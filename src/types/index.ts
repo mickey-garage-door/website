@@ -5,6 +5,8 @@ export interface ContactFormData {
   service: string;
   message: string;
   zip?: string;
+  address?: string;
+  city?: string;
 }
 
 export interface ContactFormState {

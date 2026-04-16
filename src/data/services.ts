@@ -298,72 +298,7 @@ export const services: Service[] = [
           "We recommend replacing both cables simultaneously since they experience the same wear. Replacing one and not the other often leads to the second cable failing within weeks.",
       },
     ],
-    relatedSlugs: ["spring-replacement", "garage-door-repair", "panel-replacement"],
-  },
-  {
-    slug: "panel-replacement",
-    title: "Garage Door Panel Replacement",
-    shortTitle: "Panel Replacement",
-    metaTitle: "Garage Door Panel Replacement San Diego | Mickey's Garage Door",
-    metaDescription:
-      "Dented or damaged garage door panels in San Diego? Mickey's replaces individual panels to restore appearance and function. Free estimate — call now.",
-    headline: "Garage Door Panel Replacement in San Diego",
-    subheadline:
-      "Restore your curb appeal and door function without replacing the entire door.",
-    description:
-      "A dented or damaged panel doesn't always mean you need a whole new door. In many cases, individual sections can be replaced to restore both the appearance and structural integrity of your garage door. We match panels to your existing door to maintain a consistent look.",
-    icon: "🪟",
-    heroImage: "/images/services/panel.jpg",
-    signs: [
-      "Visible dents from vehicle impact",
-      "Cracked or warped panels",
-      "Panels that are bent and preventing smooth operation",
-      "Cosmetic damage affecting curb appeal",
-      "Water damage or rust on steel panels",
-    ],
-    process: [
-      {
-        step: "Damage Assessment",
-        description:
-          "We evaluate whether individual panel replacement is feasible or if a full replacement makes more economic sense.",
-      },
-      {
-        step: "Panel Matching",
-        description:
-          "We identify your door's manufacturer and model to source matching replacement panels.",
-      },
-      {
-        step: "Panel Replacement",
-        description:
-          "Damaged sections are removed and new panels are installed, ensuring proper alignment and operation.",
-      },
-      {
-        step: "Finish & Adjust",
-        description:
-          "We realign the door, test all hardware, and ensure smooth operation before completing the job.",
-      },
-    ],
-    priceRange: "Single panel replacement typically ranges from $200–$600 depending on panel size and availability.",
-    warranty: "1-year installation warranty on all panel replacements.",
-    brands: ["Clopay", "Amarr", "Wayne Dalton", "CHI", "Raynor"],
-    faqs: [
-      {
-        question: "Is it cheaper to replace panels or get a whole new door?",
-        answer:
-          "Panel replacement is typically less expensive when only 1–2 sections are damaged. If more than half the door is damaged, or the door is older than 15 years, a full replacement often makes more economic and aesthetic sense.",
-      },
-      {
-        question: "Can you match the color and style of my existing panels?",
-        answer:
-          "In most cases yes, especially for popular brands. We recommend replacing sooner rather than later as discontinued models become harder to match over time.",
-      },
-      {
-        question: "How long does panel replacement take?",
-        answer:
-          "Most single-panel replacements take 1–2 hours once the panel is available. We may need to order the panel if we don't carry your specific model.",
-      },
-    ],
-    relatedSlugs: ["new-garage-door-installation", "garage-door-repair", "cable-drum-repair"],
+    relatedSlugs: ["spring-replacement", "garage-door-repair", "off-track-repair"],
   },
   {
     slug: "new-garage-door-installation",
@@ -434,70 +369,70 @@ export const services: Service[] = [
           "Yes. Insulated doors (R-value 6–18) reduce noise, improve energy efficiency, and are more durable. We recommend insulated doors for any garage attached to a living space.",
       },
     ],
-    relatedSlugs: ["opener-repair-installation", "panel-replacement", "garage-door-repair"],
+    relatedSlugs: ["opener-repair-installation", "off-track-repair", "garage-door-repair"],
   },
   {
-    slug: "emergency-garage-door-repair",
-    title: "Emergency Garage Door Repair",
-    shortTitle: "Emergency Repair",
-    metaTitle: "24/7 Emergency Garage Door Repair San Diego | Mickey's Garage Door",
+    slug: "off-track-repair",
+    title: "Garage Door Off Track Repair",
+    shortTitle: "Off Track Repair",
+    metaTitle: "Garage Door Off Track Repair San Diego | Mickey's Garage Door",
     metaDescription:
-      "24/7 emergency garage door repair in San Diego. Broken spring, stuck door, or security issue — Mickey's responds fast. Call now for immediate service.",
-    headline: "24/7 Emergency Garage Door Repair in San Diego",
+      "Garage door off track in San Diego? Mickey's Garage Door realigns and repairs off-track doors same-day. Licensed, insured. Call now for fast service.",
+    headline: "Garage Door Off Track Repair in San Diego",
     subheadline:
-      "Garage door won't close? We respond fast — day or night — to secure your home.",
+      "Door jumped the tracks? We realign and repair it safely — same-day service available.",
     description:
-      "A garage door that won't close is a security emergency. Whether it's a broken spring in the middle of the night, a door stuck open after a storm, or a door that came off its tracks, our emergency technicians are available around the clock. We prioritize same-hour response for situations that leave your home unsecured.",
-    icon: "🚨",
-    heroImage: "/images/services/emergency.jpg",
+      "A garage door that has come off its tracks is one of the most common and dangerous issues homeowners face. The door can become jammed, hang at an angle, or even fall. Our technicians safely realign the door back onto the tracks, inspect for underlying damage to rollers, cables, and brackets, and make sure the door operates smoothly and safely before we leave.",
+    icon: "🛤️",
+    heroImage: "/images/services/off-track.jpg",
     signs: [
-      "Door won't close and your home is unsecured",
-      "Spring or cable snapped suddenly",
-      "Door came completely off the tracks",
-      "Opener failed and you can't access the manual release",
-      "Door is jammed halfway open or closed",
-      "Vehicle is trapped inside the garage",
+      "Door is hanging at an angle or crooked",
+      "Door is jammed and won't move up or down",
+      "Visible gap between the door and the track",
+      "Rollers have popped out of the track",
+      "Loud scraping or grinding when operating the door",
+      "Door wobbles or shakes during operation",
     ],
     process: [
       {
-        step: "Call Us Immediately",
+        step: "Safety Assessment",
         description:
-          "Our emergency line is answered 24/7. We dispatch the nearest available technician to your location.",
+          "We assess the situation and safely secure the door before attempting any realignment to prevent further damage or injury.",
       },
       {
-        step: "Rapid Arrival",
+        step: "Track Inspection",
         description:
-          "We aim to arrive within 1–2 hours for emergency calls in San Diego County.",
+          "We inspect the tracks, rollers, brackets, and cables to identify why the door came off track and check for bent or damaged components.",
       },
       {
-        step: "Immediate Stabilization",
+        step: "Realignment & Repair",
         description:
-          "We first make the door safe — whether that means securing it closed or safely holding it in position.",
+          "We carefully guide the door back onto the tracks, replace any damaged rollers or brackets, and straighten bent track sections.",
       },
       {
-        step: "Full Repair",
+        step: "Full System Test",
         description:
-          "Once stabilized, we diagnose and complete the full repair on the spot in most cases.",
+          "After realignment, we test the door through multiple cycles, lubricate the tracks, and verify smooth, safe operation.",
       },
     ],
-    priceRange: "Emergency service call from $119. Repair cost quoted on-site before work begins.",
-    warranty: "All emergency repairs carry the same 1-year parts and labor warranty.",
+    priceRange: "Off track repair typically ranges from $125–$300 depending on the extent of damage.",
+    warranty: "All off track repairs carry a 1-year parts and labor warranty.",
     brands: ["LiftMaster", "Genie", "Chamberlain", "Clopay", "Wayne Dalton", "Amarr"],
     faqs: [
       {
-        question: "Do you really respond at night and on weekends?",
+        question: "Why did my garage door come off the tracks?",
         answer:
-          "Yes. Our emergency line is staffed 24/7 including holidays. We understand a stuck door can't wait until Monday.",
+          "Common causes include worn-out rollers, a broken cable that caused the door to shift, impact from a vehicle, bent tracks, or obstructions in the track path. Our technician will identify the root cause during the repair.",
       },
       {
-        question: "Is there an extra charge for emergency or after-hours service?",
+        question: "Is it safe to operate a garage door that's off track?",
         answer:
-          "There is a slightly higher service call fee for after-hours calls, but we always quote the total cost upfront before beginning any work.",
+          "No. Do not attempt to open or close a door that is off its tracks. The door can fall suddenly, causing serious injury or property damage. Disconnect the opener and call us for same-day service.",
       },
       {
-        question: "What should I do while waiting for the technician?",
+        question: "Can an off-track door damage other parts of the system?",
         answer:
-          "If the door is stuck open, do not leave the garage unattended. Pull your vehicle out if safe to do so and secure any valuables. Do not attempt to force the door manually — this can cause additional damage or injury.",
+          "Yes. Running an off-track door can bend tracks, snap cables, damage rollers, and strain the opener motor. The sooner it's repaired, the less additional damage occurs.",
       },
     ],
     relatedSlugs: ["spring-replacement", "cable-drum-repair", "garage-door-repair"],

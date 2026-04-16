@@ -118,9 +118,9 @@ export default async function LocationPage({ params }: Props) {
             </div>
           </div>
 
-          <div className="bg-white text-gray-900 rounded-2xl p-6 shadow-xl">
-            <h2 className="text-lg font-bold text-brand-dark mb-1">Get a Free Estimate in {location.city}</h2>
-            <p className="text-sm text-gray-500 mb-4">Same-day service available · No obligation</p>
+          <div className="bg-white dark:bg-surface text-gray-900 dark:text-foreground rounded-2xl p-6 shadow-2xl border border-gray-100 dark:border-gray-700 transition-colors duration-300">
+            <h2 className="text-xl font-bold text-brand-dark dark:text-brand-cyan mb-1">Get a Free Estimate in {location.city}</h2>
+            <p className="text-sm text-gray-500 dark:text-muted mb-5">Same-day service available · No obligation</p>
             <ContactForm compact />
           </div>
         </div>
