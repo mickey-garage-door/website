@@ -31,10 +31,6 @@ export const metadata: Metadata = {
 
 const homepageFAQs = [
   {
-    question: "How much does garage door repair cost in San Diego?",
-    answer: "Most repairs range from $89–$350 depending on the issue. Spring replacement is $150–$350. Opener installation starts at $250. We always provide a free on-site estimate before any work begins.",
-  },
-  {
     question: "Do you offer same-day garage door service?",
     answer: "Yes. In most cases we can dispatch a technician the same day — often within 2–4 hours. Call before noon for the best chance of same-day service.",
   },
@@ -44,7 +40,7 @@ const homepageFAQs = [
   },
   {
     question: "Do you offer a warranty on repairs?",
-    answer: "Yes. All parts and labor come with a 1-year warranty. We also offer a lifetime spring warranty on select products.",
+    answer: "Yes. All parts and labor come with a 1-5 year warranty. We also offer a lifetime spring warranty on select products.",
   },
   {
     question: "Do you provide 24/7 emergency service?",
@@ -54,7 +50,7 @@ const homepageFAQs = [
 
 const trustPoints = [
   { icon: "⚡", title: "Same-Day Service", description: "Call before noon and we'll arrive today. Emergency service available 24/7." },
-  { icon: "✅", title: "1-Year Warranty", description: "All parts and labor backed by a 1-year warranty. Lifetime springs available." },
+  { icon: "✅", title: "1–5 Year Warranty", description: "All parts and labor backed by a 1–5 year warranty. Lifetime springs available." },
   { icon: "📍", title: "Locally Owned", description: `San Diego's own since ${company.founded}. Not a franchise — a real local business.` },
 ];
 
@@ -107,7 +103,7 @@ export default function HomePage() {
 
               <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-blue-200">
                 <span className="flex items-center gap-1.5">
-                  <StarRating rating={4.9} className="text-base" />
+                  <StarRating rating={5} className="text-base" />
                   <span>
                     <strong className="text-white">{company.ratingValue}</strong> · {company.reviewCount} Google Reviews
                   </span>
@@ -184,7 +180,7 @@ export default function HomePage() {
               We&apos;re not a call center or a franchise. We&apos;re a local San Diego company with real technicians and real accountability.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {trustPoints.map((point) => (
               <div key={point.title} className="bg-surface rounded-xl p-6 shadow-sm border border-theme text-center transition-colors duration-300">
                 <div className="text-4xl mb-3">{point.icon}</div>
@@ -201,7 +197,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
             <div className="flex items-center justify-center gap-3 mb-3">
-              <StarRating rating={4.9} className="text-2xl" />
+              <StarRating rating={5} className="text-2xl" />
               <span className="text-2xl font-black text-gray-900 dark:text-gray-100">{company.ratingValue}</span>
             </div>
             <h2 className="text-3xl font-black text-gray-900 dark:text-gray-100 mb-2">

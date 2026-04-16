@@ -67,7 +67,7 @@ export default function AboutPage() {
           <div className="space-y-5">
             <div className="bg-surface-alt rounded-xl p-6 border border-theme transition-colors duration-300">
               <div className="flex items-center gap-3 mb-3">
-                <StarRating rating={4.9} className="text-xl" />
+                <StarRating rating={5} className="text-xl" />
                 <span className="font-black text-2xl text-gray-900 dark:text-gray-100">{company.ratingValue}</span>
               </div>
               <p className="text-gray-500 dark:text-gray-400 text-sm">{company.reviewCount} verified Google reviews from San Diego homeowners.</p>

@@ -17,7 +17,7 @@ export default function Header() {
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <span className="flex gap-5">
             <span>✓ Same-Day Service Available</span>
-            <span>✓ 1-Year Warranty on All Work</span>
+            <span>✓ 1–5 Year Warranty on All Work</span>
           </span>
           <span>{company.hoursShort}</span>
         </div>

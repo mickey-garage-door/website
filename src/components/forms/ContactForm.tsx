@@ -55,7 +55,7 @@ export default function ContactForm({ defaultService = "", compact = false }: Co
             Your Name <span className="text-red-500">*</span>
           </label>
           <input
-            id="name" name="name" type="text" autoComplete="name" required placeholder="John Smith"
+            id="name" name="name" type="text" autoComplete="name" required placeholder="e.g. Michael Johnson"
             className={`${inputBase} ${state.fieldErrors?.name ? "border-red-400 bg-red-50 dark:bg-red-950" : "border-gray-300 dark:border-gray-600"}`}
           />
           {state.fieldErrors?.name && <p className="text-red-500 text-xs mt-1">{state.fieldErrors.name}</p>}
@@ -66,7 +66,7 @@ export default function ContactForm({ defaultService = "", compact = false }: Co
             Phone Number <span className="text-red-500">*</span>
           </label>
           <input
-            id="phone" name="phone" type="tel" autoComplete="tel" required placeholder="(619) 572-3223"
+            id="phone" name="phone" type="tel" autoComplete="tel" required placeholder="e.g. (760) 555-0183"
             className={`${inputBase} ${state.fieldErrors?.phone ? "border-red-400 bg-red-50 dark:bg-red-950" : "border-gray-300 dark:border-gray-600"}`}
           />
           {state.fieldErrors?.phone && <p className="text-red-500 text-xs mt-1">{state.fieldErrors.phone}</p>}
@@ -78,7 +78,7 @@ export default function ContactForm({ defaultService = "", compact = false }: Co
           Email Address <span className="text-red-500">*</span>
         </label>
         <input
-          id="email" name="email" type="email" autoComplete="email" required placeholder="john@example.com"
+          id="email" name="email" type="email" autoComplete="email" required placeholder="e.g. mjohnson@gmail.com"
           className={`${inputBase} ${state.fieldErrors?.email ? "border-red-400 bg-red-50 dark:bg-red-950" : "border-gray-300 dark:border-gray-600"}`}
         />
         {state.fieldErrors?.email && <p className="text-red-500 text-xs mt-1">{state.fieldErrors.email}</p>}
@@ -105,7 +105,7 @@ export default function ContactForm({ defaultService = "", compact = false }: Co
         <div>
           <label htmlFor="zip" className={labelBase}>ZIP Code</label>
           <input
-            id="zip" name="zip" type="text" inputMode="numeric" pattern="[0-9]{5}" maxLength={5} placeholder="92101"
+            id="zip" name="zip" type="text" inputMode="numeric" pattern="[0-9]{5}" maxLength={5} placeholder="e.g. 92037"
             className={`${inputBase} border-gray-300 dark:border-gray-600`}
           />
         </div>
@@ -117,7 +117,7 @@ export default function ContactForm({ defaultService = "", compact = false }: Co
             Street Address <span className="text-gray-400 font-normal">(optional)</span>
           </label>
           <input
-            id="address" name="address" type="text" autoComplete="street-address" placeholder="300 14th Street"
+            id="address" name="address" type="text" autoComplete="street-address" placeholder="e.g. 742 Evergreen Terrace"
             className={`${inputBase} border-gray-300 dark:border-gray-600`}
           />
         </div>
@@ -127,7 +127,7 @@ export default function ContactForm({ defaultService = "", compact = false }: Co
             City <span className="text-gray-400 font-normal">(optional)</span>
           </label>
           <input
-            id="city" name="city" type="text" autoComplete="address-level2" placeholder="San Diego"
+            id="city" name="city" type="text" autoComplete="address-level2" placeholder="e.g. Chula Vista"
             className={`${inputBase} border-gray-300 dark:border-gray-600`}
           />
         </div>
@@ -139,7 +139,7 @@ export default function ContactForm({ defaultService = "", compact = false }: Co
         </label>
         <textarea
           id="message" name="message" rows={compact ? 3 : 4}
-          placeholder="Describe the issue or service you need..."
+          placeholder="e.g. Spring broke this morning, door won't open..."
           className={`${inputBase} resize-none border-gray-300 dark:border-gray-600`}
         />
       </div>

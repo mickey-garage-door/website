@@ -122,7 +122,7 @@ export default function Footer() {
           <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-400">
             <div className="flex items-center gap-2">
               <span className="text-yellow-400">★★★★★</span>
-              <span>4.9 · Google Reviews</span>
+              <span>5.0 · Google Reviews</span>
             </div>
             <span className="hidden md:block text-gray-600">|</span>
             <span>BBB Accredited Business</span>

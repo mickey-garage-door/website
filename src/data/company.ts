@@ -21,7 +21,7 @@ export const company = {
   founded: "2011",
   yearsInBusiness: "13+",
   reviewCount: "240+",
-  ratingValue: "4.9",
+  ratingValue: "5.0",
   license: "CA License #C-61/D-28 XXXXXXX",
   tagline: "San Diego's Trusted Garage Door Experts",
   description:
