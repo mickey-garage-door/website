@@ -9,7 +9,7 @@ export const company = {
     city: "San Diego",
     state: "CA",
     zip: "92101",
-    full: "300 14th Street, San Diego, CA 92102",
+    full: "300 14th Street, San Diego, CA 92101",
   },
   geo: {
     lat: 32.7157,
