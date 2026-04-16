@@ -11,6 +11,16 @@ import ReviewCard from "@/components/ui/ReviewCard";
 import FAQAccordion from "@/components/ui/FAQAccordion";
 import StarRating from "@/components/ui/StarRating";
 import ContactForm from "@/components/forms/ContactForm";
+import Image from "next/image";
+
+const serviceImages: Record<string, string> = {
+  "garage-door-repair": "/services-images/door repair.png",
+  "spring-replacement": "/services-images/Spring repair.png",
+  "opener-repair-installation": "/services-images/Opener repair.png",
+  "cable-drum-repair": "/services-images/Drum cables.png",
+  "new-garage-door-installation": "/services-images/new garage door.png",
+  "off-track-repair": "/services-images/Off track repair.png",
+};
 
 export const metadata: Metadata = {
   title: "San Diego Garage Door Repair & Installation | Mickey's Garage Door",
@@ -110,8 +120,8 @@ export default function HomePage() {
             </div>
 
             {/* Quote form panel */}
-            <div className="bg-white dark:bg-surface text-gray-900 dark:text-foreground rounded-2xl p-6 shadow-2xl transition-colors duration-300">
-              <h2 className="text-xl font-bold text-brand-dark mb-1">Get a Free Estimate</h2>
+            <div className="bg-white dark:bg-surface text-gray-900 dark:text-foreground rounded-2xl p-6 shadow-2xl border border-gray-100 dark:border-gray-700 transition-colors duration-300">
+              <h2 className="text-xl font-bold text-brand-dark dark:text-brand-cyan mb-1">Get a Free Estimate</h2>
               <p className="text-sm text-gray-500 dark:text-muted mb-5">We respond within 1 hour · No obligation</p>
               <ContactForm compact />
             </div>
@@ -128,26 +138,35 @@ export default function HomePage() {
               From emergency repairs to full new door installations — we handle everything garage door related in San Diego County.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service) => (
               <Link
                 key={service.slug}
                 href={`/services/${service.slug}`}
-                className="group border border-theme rounded-xl p-6 hover:border-brand-dark dark:hover:border-brand-cyan hover:shadow-lg transition-all duration-200 bg-surface"
+                className="group relative overflow-hidden rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 aspect-4/3"
               >
-                <div className="text-3xl mb-3">{service.icon}</div>
-                <h3 className="font-bold text-gray-900 dark:text-gray-100 text-base mb-1 group-hover:text-brand-dark dark:group-hover:text-brand-cyan transition-colors">
-                  {service.shortTitle}
-                </h3>
-                <p className="text-gray-500 dark:text-gray-400 text-sm leading-relaxed line-clamp-2">
-                  {service.description.split(".")[0]}.
-                </p>
-                <span className="inline-flex items-center gap-1 text-brand-dark dark:text-brand-cyan text-sm font-semibold mt-3 group-hover:gap-2 transition-all">
-                  Learn More
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </span>
+                <Image
+                  src={serviceImages[service.slug] ?? "/services-images/door repair.png"}
+                  alt={service.shortTitle}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                  <h3 className="font-black text-white text-lg mb-1 drop-shadow-lg">
+                    {service.shortTitle}
+                  </h3>
+                  <p className="text-gray-200 text-sm leading-relaxed line-clamp-2 mb-3">
+                    {service.description.split(".")[0]}.
+                  </p>
+                  <span className="inline-flex items-center gap-1.5 text-brand-cyan text-sm font-bold group-hover:gap-3 transition-all duration-300">
+                    Read More
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </div>
               </Link>
             ))}
           </div>

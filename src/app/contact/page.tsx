@@ -61,12 +61,12 @@ export default function ContactPage() {
 
       <section className="py-16 px-4 bg-surface transition-colors duration-300">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14">
-          <div>
-            <h2 className="text-2xl font-black text-gray-900 dark:text-gray-100 mb-2">Request a Quote</h2>
-            <p className="text-gray-500 dark:text-gray-400 text-sm mb-6">
-              No obligation. We&apos;ll contact you within 1 hour during business hours to confirm your appointment.
+          <div className="bg-white dark:bg-surface rounded-2xl p-6 shadow-2xl border border-gray-100 dark:border-gray-700 transition-colors duration-300">
+            <h2 className="text-xl font-bold text-brand-dark dark:text-brand-cyan mb-1">Request a Quote</h2>
+            <p className="text-sm text-gray-500 dark:text-muted mb-5">
+              No obligation · We respond within 1 hour during business hours
             </p>
-            <ContactForm />
+            <ContactForm compact />
           </div>
 
           <div className="space-y-6">

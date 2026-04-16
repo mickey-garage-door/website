@@ -111,6 +111,28 @@ export default function ContactForm({ defaultService = "", compact = false }: Co
         </div>
       </div>
 
+      <div className={compact ? "grid grid-cols-1 sm:grid-cols-2 gap-4" : ""}>
+        <div>
+          <label htmlFor="address" className={labelBase}>
+            Street Address <span className="text-gray-400 font-normal">(optional)</span>
+          </label>
+          <input
+            id="address" name="address" type="text" autoComplete="street-address" placeholder="300 14th Street"
+            className={`${inputBase} border-gray-300 dark:border-gray-600`}
+          />
+        </div>
+
+        <div>
+          <label htmlFor="city" className={labelBase}>
+            City <span className="text-gray-400 font-normal">(optional)</span>
+          </label>
+          <input
+            id="city" name="city" type="text" autoComplete="address-level2" placeholder="San Diego"
+            className={`${inputBase} border-gray-300 dark:border-gray-600`}
+          />
+        </div>
+      </div>
+
       <div>
         <label htmlFor="message" className={labelBase}>
           Brief Description <span className="text-gray-400 font-normal">(optional)</span>

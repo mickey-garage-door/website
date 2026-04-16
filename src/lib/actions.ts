@@ -1,7 +1,7 @@
 "use server";
 
 import { ContactFormData, ContactFormState } from "@/types";
-import { sendContactEmail } from "./sendEmail";
+import { sendContactEmail, sendConfirmationEmail } from "./sendEmail";
 
 function validatePhone(phone: string): boolean {
   return /^[\d\s\-()+]{7,20}$/.test(phone.trim());
@@ -22,6 +22,8 @@ export async function submitContactForm(
     service: String(formData.get("service") ?? "").trim(),
     message: String(formData.get("message") ?? "").trim(),
     zip: String(formData.get("zip") ?? "").trim() || undefined,
+    address: String(formData.get("address") ?? "").trim() || undefined,
+    city: String(formData.get("city") ?? "").trim() || undefined,
   };
 
   const fieldErrors: ContactFormState["fieldErrors"] = {};
@@ -45,6 +47,9 @@ export async function submitContactForm(
 
   try {
     await sendContactEmail(data);
+    sendConfirmationEmail(data).catch((err) =>
+      console.error("Confirmation email error:", err)
+    );
     return { success: true };
   } catch (err) {
     console.error("Contact form email error:", err);
