@@ -24,7 +24,7 @@ export default function Header() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-20 md:h-26">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-wrap min-w-0">
             <div className="flex flex-wrap gap-2 logo-word-dark">
@@ -35,15 +35,15 @@ export default function Header() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="h-[1.3em] w-auto"
+                  className="h-[2.0em] w-auto"
                 />
 
-                <span className="font-black text-xl md:text-2xl tracking-tight leading-none">
+                <span className="font-black text-2xl md:text-4xl tracking-tight leading-none">
                   Mickey&apos;s
                 </span>
               </div>
 
-              <span className="font-black text-xl md:text-2xl tracking-tight leading-none">
+              <span className="font-black text-2xl md:text-4xl tracking-tight leading-none">
                 Garage Door
               </span>
             </div>
